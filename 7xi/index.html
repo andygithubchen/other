@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>蜃龙游戏 - 七夕小专题</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <style>
+      html,body{
+        padding:0;
+        margin:0;
+        font-size:12px;
+      }
+      h5,p{
+        padding:0;
+      }
+      .bd{
+        border:1px solid red;
+      }
+      .box{
+        padding-top:30px;
+        overflow:hidden;
+      }
+      .content-girl,
+      .content-box,
+      .content-boy{
+        padding:20px;
+        float:left;
+      }
+      .content-girl{
+        width:38%;
+      }
+      .content-box{
+        width:17%;
+        height:600px;
+        border-radius: 3px;
+        border:1px solid #CCC;
+      }
+      .content-boy{
+        width:38%;
+        text-align:right;
+      }
+      .btn{
+        padding: 15px;
+        width: 100%;
+        border: 1px solid #FFF;
+        margin-top:15px;
+        cursor:pointer;
+        display: inline-block;
+        margin-bottom: 0;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.42857143;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        color: #fff;
+      }
+      .btn-hot{
+        position:relative;
+        z-index:999;
+        top:0px;
+        left:0px;
+        color: #fff;
+        background-color: #d9534f;
+        border-color: #d43f3a;
+      }
+      .btn-boy{
+        background-color: #337ab7;
+        border-color: #2e6da4;
+      }
+      .btn-girl{
+        background-color: #5cb85c;
+        border-color: #4cae4c;
+      }
+      .img-box{
+        text-align:center;
+        display:none;
+        overflow:hidden;
+      }
+      .gowork{
+        display:none;
+      }
+      .img{
+        overflow:hidden;
+      }
+      .img img{
+        float:left;
+        height:140px;
+      }
+      .footer-img{
+        background:url('/public/7x/footer.jpg');
+        height: 54px;
+        margin-top: 15px;
+        background-size: 86px;
+      }
+      .footer{
+        padding:20px;
+        margin-top:20px;
+        border-top: 1px solid #CCC;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="box">
+      <div class="content-girl">
+        <div class="img-box" id="girl">
+          <div class=""><img style="height:270px" src="/public/7x/girl/girl.jpg"></div>
+          <br> <br> <br>
+          <div class="img">
+            <img src="/public/7x/girl/1.jpg">
+            <img src="/public/7x/girl/2.gif">
+            <img src="/public/7x/girl/3.jpg">
+            <img src="/public/7x/girl/4.jpg">
+            <img src="/public/7x/girl/5.jpg">
+            <img src="/public/7x/girl/6.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="content-box">
+        <div style="font-size:16px"> <b>蜃龙游戏 - 七夕小专题</b></div>
+        <br>
+        <button class="btn btn-boy" data-type="boy">单身男</button>
+        <button class="btn btn-girl" data-type="girl">单身女</button>
+        <button class="btn btn-hot" id="hot" onclick="javascript:location.href='/index/index/animation'">热恋中 / 有对象</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div>
+          <p><a href="javascript:more()">还有吗？</a></p>
+          <div class="gowork">
+            <img src="/public/7x/gowork.png">
+          </div>
+        </div>
+      </div>
+      <div class="content-boy">
+        <div class="img-box" id="boy">
+          <div class=""><img style="height:270px" src="/public/7x/boy/boy.gif"></div>
+          <br> <br> <br>
+          <div class="img">
+            <img src="/public/7x/boy/1.jpg">
+            <img src="/public/7x/boy/2.jpg">
+            <img src="/public/7x/boy/3.jpg">
+            <img src="/public/7x/boy/4.jpg">
+            <img src="/public/7x/boy/5.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-img"> </div>
+    <div class="footer">
+      纯属娱乐，好好干活
+    </div>
+  </body>
+</html>
+<script>
+  var times = 0;
+  $(document).on('mouseenter', '#hot', function(){
+    var top  = '0px';
+    var left = '0px';
+    if(times < 3){
+      top  = rd(-50, 300) + 'px';
+      left = rd(-350, 350) + 'px';
+    }
+
+    $(this).css({
+      top:top,
+      left:left,
+    })
+    ++times;
+  })
+  function rd(n,m){
+      var c = m-n+1;
+      return Math.floor(Math.random() * c + n);
+  }
+
+  function more(){
+    $('.gowork').show();
+  }
+
+  $(document).on('click', '.btn-boy, .btn-girl', function(){
+    $('#boy, #girl').hide();
+    var type = $(this).data('type');
+    $('#'+type).show();
+  })
+</script>
+
+
+
+
+

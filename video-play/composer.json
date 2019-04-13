@@ -1,0 +1,5 @@
+{
+    "require": {
+        "amnuts/jwplayer-thumbnail-preview-generator": "^1.1"
+    }
+}

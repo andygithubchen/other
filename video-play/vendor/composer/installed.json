@@ -1,0 +1,49 @@
+[
+    {
+        "name": "amnuts/jwplayer-thumbnail-preview-generator",
+        "version": "v1.1.3",
+        "version_normalized": "1.1.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/amnuts/jwplayer-thumbnail-preview-generator.git",
+            "reference": "ecf57ea735834c63a545104468da2ff66f7e3e34"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/amnuts/jwplayer-thumbnail-preview-generator/zipball/ecf57ea735834c63a545104468da2ff66f7e3e34",
+            "reference": "ecf57ea735834c63a545104468da2ff66f7e3e34",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4"
+        },
+        "time": "2016-02-12T12:41:46+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Andrew Collington",
+                "email": "andy@amnuts.com",
+                "homepage": "http://www.amnuts.com/",
+                "role": "Developer"
+            },
+            {
+                "name": "Contributors",
+                "homepage": "https://github.com/amnuts/jwplayer-thumbnail-preview-generator/graphs/contributors"
+            }
+        ],
+        "description": "A simple but effective command-line tool for generating thumbnails of a video, and corresponding VTT file, for use within JW Player to allow for toolbar video preview.",
+        "keywords": [
+            "Thumbnails",
+            "ffmpeg",
+            "jwplayer",
+            "thumbnail",
+            "video",
+            "vtt"
+        ]
+    }
+]

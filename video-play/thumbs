@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">	
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Nuevo plugin for video.js - Overlay demo</title>
+<meta name="description" content="Show overlay container with any possible content during video playback using Nuevo plugin for Video Js framework." /><link rel="canonical" href="https://www.nuevolab.com/videojs/thumbs">
+<meta content="Nuevo plugin for video.js - Overlay demo" property="og:title" />
+<meta content="Show overlay container with any possible content during video playback using Nuevo plugin for Video Js framework." property="og:description" /><meta content="website" property="og:type">
+<meta property="og:image" content="https://www.nuevolab.com/img/vjs_logo.png?tm=1520835844" />
+<meta content="560" property="og:image:width" />
+<meta content="420" property="og:image:height" />
+<meta property="og:image:type" content="image/png" />
+<meta content="Nuevolab" property="og:site_name">
+<meta content="https://www.nuevolab.com/videojs/thumbs" property="og:url">
+<meta name="robots" content="follow,index" />
+<link href="/favicon.ico" type="image/x-icon" rel="shortcut icon">
+<link href="/nv57.png" rel="apple-touch-icon">
+<link href="/nv72.png" sizes="72x72" rel="apple-touch-icon">
+<link href="/nv114.png" sizes="114x114" rel="apple-touch-icon">
+<link href="/css/vjs.css" rel="stylesheet" type="text/css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="/vdjs/videojs-ie8.min.js"></script>
+<link rel="image_src" href="https://www.nuevolab.com/img/nvsoft.jpg?tm=1520835844"/>
+<script async src="/js/motion_less.js"></script>
+</head>
+
+<body id="bd">
+<div id="navi">
+
+  <ul id="bnav">
+   <li><div><label>MENU</label></div></li>
+   <li class="fsub">
+      <div class="nvp"><span>Nuevoplayer</span><span class="subar"></span></div>
+      <div class="submenu">
+      <ul class="subul" class="sub1">
+	<li><div><a href="/">Overview</a></div></li>
+	<li><div><a href="/wizard">Wizard</a></div></li>
+	<li><div><a href="/doc/">Documentation</a></div></li>
+	<li><div><a href="/html5">HTML5</a></div></li>
+	<li><div><a href="/playlists">Playlists</a></div></li>
+	<li><div><a href="/youtube">Youtube</a></div></li>
+	<li><div><a href="/advertising">Advertising</a></div></li>
+	<li><div><a href="/integration/">Integration</a></div></li>
+	<li><div><a href="/skins">Skins</a></div></li>
+	<li><div><a href="/javascript">Javascript</a></div></li>
+	<li><div><a href="/plugins">Premium</a></div></li>
+	<li><div><a href="/order">Pricing</a></div></li>
+      </ul>
+      </div>
+   </li>
+   <li class="fsub">
+      <div class="nvp"><span>Video Js Plugin</span><span class="subar"></span></div>
+      <div class="submenu">
+      <ul class="subul" class="sub2">
+	<li><div><a href="/videojs/">Overview</a></div></li>
+	<li><div><a href="/videojs/doc/">Documentation</a></div></li>
+	<li><div><a href="/videojs/themes">Skins</a></div></li>
+	<li><div><a href="/videojs/preroll">Preroll</a></div></li>
+	<li><div><a href="/videojs/plugins">More plugins</a></div></li>
+	<li><div><a href="/videojs/youtube">Youtube</a></div></li>
+	<li><div><a href="/videojs/integration">Integrations</a></div></li>
+	<li><div><a href="/videojs/examples">Examples</a></div></li>
+	<li><div><a href="/videojs/order">Order</a></div></li>
+      </ul>
+      </div>
+   </li>
+   <li><div><a href="/template">Templates</a></div></li>
+   <li><div><a href="/scripts/">Script &amp; Mods</a></div></li>
+   <li><div><a href="/videoservice">Services</a></div></li>
+   <li><div><a href="/clients">Clients</a></div></li>
+   <li><div><a href="http://forum.nuevolab.com">Forum</a></div></li>
+   <li><div><a href="/blog/">Blog</a></div></li>
+
+  </ul>
+</div>
+
+<div id="pagewrapper">
+
+<header id="header" role="banner">
+
+
+  <div class="mid">
+    <div class="logo">
+               <a href="https://www.nuevolab.com"><img src="/graphics/logo2.png" alt="NuevoLab" /></a>
+    </div>
+    <div class="log">
+              <a href="/login">Login</a> &bull; <a href="/login">Clientarea</a>  &bull; <a href="/contact">Contact Us</a>
+    </div>
+  </div>
+</header>
+<div id="browse" class="browse"></div>
+
+
+<div id="menu">
+
+<div id="nav">
+  
+  <div class="mnu">
+
+
+    <ul>
+      <li><a href="https://www.nuevolab.com">NuevoPlayer</a></li><li><a class="current" href="/videojs">VideoJs Plugin</a></li><li><a href="/template">Templates</a></li><li><a href="/scripts/">Script &amp; Mods</a></li><li><a href="/videoservice">Services</a></li><li><a href="/clients">Clients</a></li><li><a href="http://forum.nuevolab.com">Forum</a></li><li><a href="/blog/">Blog</a></li>
+ 
+    </ul>
+
+    </div>
+
+
+
+</div>
+
+
+<div class="submenu">
+       <div class="sublinks">
+		<a href="/videojs/">Overview</a>		<a href="/videojs/doc/">Documentation</a>		<a href="/videojs/themes">Skins</a>		<a href="/videojs/preroll">Preroll Demo</a>		<a href="/videojs/plugins">More plugins</a>		<a href="/videojs/youtube">Youtube</a>		<a href="/videojs/integration">Integration</a>		<a href="/videojs/examples">Examples</a>		<a href="/videojs/order">Order</a>		
+		
+
+       </div>
+
+</div>
+
+</div>
+<section class="content">
+
+<h1>Advanced progress thumbs for Video Js player</h1>
+<div class="media-vjs">
+<div class="media-parent">
+<video id="veoplayer" class="video-js vjs-fluid vjs-default-skin" shareUrl='https://www.nuevolab.com.com/videojs/' shareTitle="Nuevo plugin for VideoJs Player" poster="https://www.nuevolab.com/vdjs/media/surf.jpg" slideImage="https://www.nuevolab.com/vdjs/media/surf_slide.jpg" controls
+ preload="auto">
+  <source src="https://www.nuevolab.com/vdjs/media/surf_240.mp4" res="240" label="240p" type="video/mp4">
+  <source src="https://www.nuevolab.com/vdjs/media/surf_360.mp4" res="360" label="360p" type="video/mp4">
+  <source src="https://www.nuevolab.com/vdjs/media/surf_480.mp4" default res="480" label="480p" type="video/mp4">
+  <source src="https://www.nuevolab.com/vdjs/media/surf_720.mp4" res="720" label="720p" type="video/mp4">
+</video>
+</div>
+</div>
+
+<script type="text/javascript" src="https://www.nuevolab.com/vdjs/video.min.js"></script>
+<script type="text/javascript" src="https://www.nuevolab.com/vdjs/nuevo.min.js"></script>
+
+<script>
+var baseurl = 'https://www.nuevolab.com';
+
+var related_videos=new Array; var obj;
+obj = {thumb: baseurl+'/vdjs/media/freeride_thumb.jpg',url: baseurl+'/videojs/demo/freeride',title: 'People are amazin, bikers in particular!'}; 
+related_videos.push(obj);
+obj = {thumb: baseurl+'/vdjs/media/big_buck_thumb.jpg',url: baseurl+'/videojs/demo/big_buck',title: 'Big Buck Bunny'}; 
+related_videos.push(obj);
+obj = {thumb: baseurl+'/vdjs/media/animals_thumb.jpg',url: baseurl+'/videojs/demo/animals',title: 'Animals are amazing!'}; 
+related_videos.push(obj);
+obj = {thumb: baseurl+'/vdjs/media/bmv_thumb.jpg',url: baseurl+'/videojs/demo/bmv',title: 'BMV M4 Ultimate Racetrack'}; 
+related_videos.push(obj);
+obj = {thumb: baseurl+'/vdjs/media/australia_thumb.jpg',url: baseurl+'/videojs/demo/australia',title: 'Welcome to Australia'}; 
+related_videos.push(obj);
+obj = {thumb: baseurl+'/vdjs/media/base_jump_thumb.jpg',url: baseurl+'/videojs/demo/base_jump',title: 'Incredible BASE Jump'}; 
+related_videos.push(obj);
+var player = videojs('veoplayer',nuevo,function(){ 
+	this.nuevoPlugin({
+		logo:baseurl+'/vdjs/media/yourlogo.png',
+		logotitle:'Nuevolab Software',
+		logoposition:'RT',
+		logourl:baseurl+'.com/videojs/',
+		related: related_videos,
+	});
+
+});
+
+</script>
+
+</section>
+<div class="full-width">
+<section class="article">
+<span class="title">Progress thumbs Nuevo plugin for Video Js</span>
+<a href="https://www.brightcove.com" target="_blank"><img class="blogo" src="/img/brightcove.png" /></a>
+Nuevo plugin for Video.js framework offers advanced plugin which allows to display thumbnails over progress bar synchronized with video timeline. Progress thumbnails is as easy to apply as video poster, however preparing such thumbnails is quite specific and can be troublesome for webmasters without programming experience. Most of available plugins of this type use a collection of small thumb images and hierarchical list of image paths along video timestamps. 
+<p></p>
+<h2>What is progress thumbs image by Nuevolab?</h2>
+Nuevo plugin use only one JPG image combined of many small thumbnails, arranged one after another in vertical direction, just like example <a href="http://www.nuevolab.com/vdjs/media/surf_slide.jpg" target="_blank">thumbs image</a> for video above. This is  192 x 6804 jpg image and consists of 63 thumbs, each 192 x 108 pixels. Thumbs image cannot be higher than 10000 px. Single thumb width and height can be different than 192x108, though it is suggested to keep 16x9 aspect ratio. 
+If thumb's size different than default (192x108), you must define it in Nuevo plugin options. 
+You need to calculate the number of small thumb images and time intervals that thumbs should be generated from video, according to video duration and later combined into single JPG image. In example above this is 63 thumbs for 04:12 (252 seconds) long video. It's easy to calculate that small thumbs were generated per each 4 seconds of video.
+<p></p>Why our progressbar thumbs plugin is so unique?<br />
+The plugins of this type that you can find on internet make use of list of small thumb images and loads each single image on separate request. Not only such plugin requires a long list of image paths and timestamps for each thumb, but it also means HTTP request for each single image (63 HTTP reuests for example video). And you can read everywhere that one of most important things to keep your website loading fast is to limit nuber of HTTP requests to absolute minimum. That's hy our idea was to build a plugin that use only one HTTP request for one image. This really matters. Imagine one HTTP request instead of 63! Additionally image already loaded is much more smooth in display, allows for much more precise thumbs. Additionally our Nuevo plugin takes care not to load progressbar thumbs for mobile devices. Mobile device does not support mouse over event, is usually too small to display thumbs over progressbar. So now you can imagine how our plugin unique is and how important it is.
+<p></p>
+Webmasters who know PHP and GD image processing functions should not have a trouble with writing necessary code to generate one big thumb image. Of course it's possible to do it manually, but it's not handy, definitely not for websites with many videos.
+<p></p>
+As it was mentioned assigning progress thumbs image is very simple, inline of video tag or as nuevo.js option just like in code examples below.
+
+<pre class="wiki">
+
+&lt;video id="myplayer" class="video-js vjs-default-skin" poster="http://www.domain.com/poster.jpg" slideImage="http://www.domain.com/slide-image.jpg" controls preload="auto"&gt;
+  &lt;source src="http://www.domain.com/video_480.mp4" default res="480" label="480" type="video/mp4"&gt;
+  &lt;source src="http://www.domain.com/video_720.mp4" default res="720" label="720" type="video/mp4"&gt;
+&lt;/video&gt;
+
+</pre>
+<pre class="wiki">
+
+&lt;video id="myplayer" class="video-js vjs-default-skin" poster="http://www.domain.com/poster.jpg"  controls preload="auto"&gt;
+  &lt;source src="http://www.domain.com/video_480.mp4" default res="480" label="480p" type="video/mp4"&gt;
+  &lt;source src="http://www.domain.com/video_720.mp4" default res="720" label="720p" type="video/mp4"&gt;
+&lt;/video&gt;
+&lt;script&gt;
+var player = videojs('veoplayer',nuevo,function(){ 
+	this.nuevoPlugin({
+		slideImage="http://www.domain.com/slide-image.jpg",
+		slideImageWidth: 160,
+		slideImageHeight: 90
+	});
+});
+&lt;/script&gt;
+
+</pre>
+
+
+If your thumb images are of different size than default (192x108 px), you need to set appropriate options for "nuevo" plugin. See code setup below for progress thumbs and size 160x90 px.
+<pre class="wiki">
+
+&lt;video id="myplayer" class="video-js vjs-default-skin" poster="http://www.domain.com/poster.jpg" slideImage="http://www.domain.com/slide-image.jpg" controls preload="auto"&gt;
+  &lt;source src="http://www.domain.com/video_480.mp4" default res="480" label="480p" type="video/mp4"&gt;
+  &lt;source src="http://www.domain.com/video_720.mp4" default res="720" label="720p" type="video/mp4"&gt;
+&lt;/video&gt;
+&lt;script&gt;
+var player = videojs('veoplayer',nuevo,function(){ 
+	this.nuevoPlugin({
+		slideImageWidth: 160,
+		slideImageHeight: 90
+	});
+});
+&lt;/script&gt;
+
+</pre>
+For few dynamic video CMS/scripts Nuevolab offers ready scripts to generate progress thumb images automatically for newly uploaded videos or to generate thumbs image manually for already hosted videos.
+
+</section>
+</div><footer id="footer">
+
+
+  <div id="prefooter" class="prefooter animate_wfc"><div class="wrapper">
+  
+   <span class="dont">Nuevo plugin for Video Js</span>
+   <a class="button bl" href="/videojs/order">GET IT HERE</a>
+  </div></div>
+
+
+
+<div class="box1">
+
+<div class="tbl">
+<div class="tblcl">
+<a href="/videojs/doc">Video.js Plugin Documentation</a><br />
+<a href="/videoj/preroll">Preroll Demo</a><br />
+<a href="/videojs/thumbs">Progress Thumbs</a><br />
+</div>
+
+<div class="tblcl">
+<a href="/videojs/youtube">Youtube Demo</a><br />
+<a href="/videojs/integration">Video.jsIntegrations</a><br />
+<a href="/videojs/order">Order Nuevo Plugin</a><br />
+</div>
+
+</div>
+</div>
+
+<div id="footcontainer">
+   <p>Copyright &copy; 2008 NuevoLab.com. All rights reserved. <a href="/EULA.pdf" target="_blank">License Agreement</a></p>
+
+</div>
+
+
+
+</footer>
+</div>
+<script type="text/javascript" src="/js/waypoints.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
